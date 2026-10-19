@@ -29,11 +29,11 @@ export const NAV_MENUS: NavMenu[] = [
     label: 'Topics',
     groups: [
       {
-        label: 'Types',
+        label: 'By category',
         links: VISIBLE_TOPICS.filter((topic) => FORMAT_TOPICS.includes(topic)).map(toTopicLink),
       },
       {
-        label: 'Features',
+        label: 'By feature',
         links: VISIBLE_TOPICS.filter((topic) => !FORMAT_TOPICS.includes(topic)).map(toTopicLink),
       },
     ],
