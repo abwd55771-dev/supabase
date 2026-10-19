@@ -33,7 +33,7 @@ const { topic, description, guides, troubleshooting } = Astro.props
 ---
 
 <Layout title={topic} description={description}>
-	<Hero client:load title={topic} description={description} guides={[...guides, ...troubleshooting]}>
+	<Hero client:load variant="grid" title={topic} description={description} guides={[...guides, ...troubleshooting]}>
 		<Breadcrumb slot="breadcrumb">
 			<BreadcrumbList>
 				<BreadcrumbItem>
